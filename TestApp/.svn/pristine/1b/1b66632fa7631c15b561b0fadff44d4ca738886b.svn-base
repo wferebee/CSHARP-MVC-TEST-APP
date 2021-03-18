@@ -1,0 +1,37 @@
+﻿@page "/Willie's_Butt"
+@model TestApp.Pages.WilliesBioModel
+@{
+    ViewData["Title"] = "Home page";
+
+    
+}
+
+
+
+<h1>@ViewData["Message"]</h1>
+<h2>Today is: @ViewData["time"]</h2>
+
+<div>
+    <h1>
+        UserName: @Model.Username
+    </h1>
+
+    <ul>
+
+        @foreach (string name in Model.names)
+        {
+
+            <li>@name: is a dumbby</li>
+
+        }
+
+
+
+
+
+    </ul>
+
+    <h1>The date @ViewData["theDate"]</h1>
+
+
+</div>

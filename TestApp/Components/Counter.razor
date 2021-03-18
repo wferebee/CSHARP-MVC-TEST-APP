@@ -1,0 +1,15 @@
+﻿<h3>@Text : @counter</h3>
+
+@code {
+
+    [Parameter]
+    public string Text { get; set; }
+
+    static int counter = 0;
+
+    protected override void OnInitialized()
+    {
+        counter++;
+        Text = "WILLLLLLLLLIE";
+    }
+}
